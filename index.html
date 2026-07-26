@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fofana Data Link</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#eef5ff;
+color:#222;
+font-family:Arial,Helvetica,sans-serif;
+line-height:1.6;
+}
+
+header{
+background:#003366;
+color:white;
+padding:18px;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,.2);
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+max-width:1100px;
+margin:auto;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+    background:
+    linear-gradient(rgba(0,51,102,.70), rgba(0,51,102,.70)),
+    url("images/hero.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    color:white;
+    padding:90px 20px;
+    text-align:center;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+.btn{
+background:#FFD700;
+color:#000;
+padding:15px 35px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+display:inline-block;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+section{
+max-width:1100px;
+margin:auto;
+padding:60px 20px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+th,td{
+padding:15px;
+border:1px solid #ddd;
+text-align:center;
+}
+
+th{
+background:#0056b3;
+color:white;
+}
+
+form{
+display:grid;
+gap:15px;
+}
+
+input,textarea{
+padding:12px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+background:#0056b3;
+color:white;
+padding:15px;
+border:none;
+border-radius:5px;
+font-size:18px;
+cursor:pointer;
+}
+
+footer{
+background:#222;
+color:white;
+padding:30px;
+text-align:center;
+margin-top:50px;
+}
+
+.notice{
+background:#fff3cd;
+padding:20px;
+border-left:6px solid orange;
+margin-top:30px;
+border-radius:5px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
+font-size:28px;
+font-weight:bold;
+color:white;
+}
+
+.logo img{
+    width:90px;
+    height:auto;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+    <img src="images/logo.png" alt="Fofana Data Link Logo" >
+    <h2>Fofana Data Link</h2>
+</div>
+
+<nav>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#pricing">Pricing</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Welcome to Fofana Data Link</h1>
+
+<h2>Your Trusted DV Lottery Application Assistance</h2>
+
+<p>
+Helping eligible applicants in Guinea, Liberia, Côte d'Ivoire (Ivory Coast), Europe, and America prepare and submit their U.S. Diversity Visa Lottery applications.
+</p>
+
+<a class="btn" href="#contact">Start Your Application</a>
+
+</section>
+
+<section id="about">
+
+<h2>About Us</h2>
+
+<br>
+
+<p>
+Fofana Data Link provides professional assistance to people applying for the U.S. Diversity Visa (DV) Lottery. We help clients complete their applications accurately, review their information and photographs, and reduce common mistakes before submission.
+</p>
+
+<p style="margin-top:15px;">
+We proudly serve clients in Guinea, Liberia, Côte d'Ivoire (Ivory Coast), Europe, and America.
+</p>
+<div class="notice">
+
+<strong>Important:</strong><br><br>
+
+We are an independent application assistance service.
+
+We are NOT affiliated with the U.S. Government.
+
+Selection in the Diversity Visa Lottery is completely random.
+
+We cannot guarantee selection.
+
+</div>
+
+</section>
+
+<section id="services">
+
+<h2>Our Services</h2>
+
+<br>
+
+<div class="cards">
+
+<div class="card">
+<h3>Application Assistance</h3>
+<p>We help you complete your DV Lottery application correctly.</p>
+</div>
+
+<div class="card">
+<h3>Photo Review</h3>
+<p>We verify your photo meets DV Lottery requirements.</p>
+</div>
+
+<div class="card">
+<h3>Family Applications</h3>
+<p>Help completing applications for eligible family members.</p>
+</div>
+
+<div class="card">
+<h3>Result Checking</h3>
+<p>We help you check your application status after results are released.</p>
+</div>
+
+</div>
+
+</section>
+<section>
+
+<h2>Why Choose Fofana Data Link?</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Professional Support</h3>
+<p>We guide you through the DV Lottery application process carefully and accurately.</p>
+</div>
+
+<div class="card">
+<h3>Fast Response</h3>
+<p>Contact us by phone, email, or WhatsApp for prompt assistance.</p>
+</div>
+
+<div class="card">
+<h3>Trusted Service</h3>
+<p>We help clients prepare their applications while clearly explaining that selection is random and cannot be guaranteed.</p>
+</div>
+<section id="stats">
+
+<h2>Why Clients Choose Us</h2>
+
+<div class="cards">
+
+<div class="card">
+<h1>5+</h1>
+<p>Regions Served</p>
+</div>
+
+<div class="card">
+<h1>24 Hours</h1>
+<p>Fast Response</p>
+</div>
+
+<div class="card">
+<h1>100%</h1>
+<p>Professional Support</p>
+</div>
+
+<div class="card">
+<h1>WhatsApp</h1>
+<p>Quick Communication</p>
+</div>
+
+</div>
+
+</section>
+</div>
+
+</section>
+<section id="pricing">
+
+<section id="pricing">
+
+<h2>Our Service Fees</h2>
+
+<table>
+
+<tr>
+<th>Service</th>
+<th>Price</th>
+</tr>
+
+<tr>
+<td>Single Applicant</td>
+<td><strong>$10</strong></td>
+</tr>
+
+<tr>
+<td>Couple (Husband & Wife)</td>
+<td><strong>$15</strong></td>
+</tr>
+
+<tr>
+<td>DV Lottery Result Checking</td>
+<td><strong>$5</strong></td>
+</tr>
+
+</table>
+
+<p style="margin-top:20px;">
+The service fee covers assistance with preparing your application. It does not guarantee selection in the DV Lottery.
+</p>
+
+</section>
+
+</table>
+
+</section>
+<section id="payment">
+
+<h2>Payment Methods</h2>
+
+<p>
+We accept the following payment methods for our DV Lottery application services:
+</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>💳 Orange Money</h3>
+<p><strong>Name:</strong> Mohamed Fofana</p>
+<p><strong>Number:</strong> 610 917 082</p>
+</div>
+
+<div class="card">
+<h3>📱 MTN Mobile Money</h3>
+<p><strong>Name:</strong> Fofana Data Link</p>
+<p><strong>Number:</strong> 625 317 088</p>
+</div>
+
+</div>
+
+<p style="margin-top:20px;color:#b22222;">
+<strong>Important:</strong> Please send us a screenshot or receipt after making your payment so we can confirm it before preparing your application.
+</p>
+
+</section>
+
+</section>
+<section id="photo">
+
+<h2>Passport-Style Photo Requirements</h2>
+
+<div class="card">
+
+<ul>
+
+<li>✔ Photo taken within the last 6 months.</li>
+
+<li>✔ White or off-white background.</li>
+
+<li>✔ Face looking directly at the camera.</li>
+
+<li>✔ No sunglasses.</li>
+
+<li>✔ No filters or edited photos.</li>
+
+<li>✔ JPG, JPEG or PNG format.</li>
+
+</ul>
+
+</div>
+
+</section>
+<section id="contact">
+
+<h2>Apply for the DV Lottery</h2>
+
+<p>
+Please complete the application form below. Make sure your information matches your passport exactly. Upload a recent passport-style photo that meets the official DV Lottery requirements.
+</p>
+
+<br>
+<form>
+
+<h3>DV Lottery Application Form</h3>
+
+<input type="text" placeholder="Full Name (As in Passport)" required>
+
+<input type="date" required>
+
+<select required>
+<option value="">Select Gender</option>
+<option>Male</option>
+<option>Female</option>
+</select>
+
+<input type="text" placeholder="Country of Birth" required>
+
+<input type="text" placeholder="Country of Eligibility (if different)">
+
+<input type="text" placeholder="Current Country of Residence" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="tel" placeholder="Phone Number (Include Country Code)" required>
+
+<select required>
+<option value="">Marital Status</option>
+<option>Single</option>
+<option>Married</option>
+<option>Divorced</option>
+<option>Widowed</option>
+</select>
+
+<input type="text" placeholder="Highest Level of Education" required>
+
+<input type="text" placeholder="Occupation">
+
+<input type="number" placeholder="Number of Children">
+
+<label><strong>Upload Your Passport-Style Photo</strong></label>
+<input type="file" accept=".jpg,.jpeg,.png" required>
+
+<textarea rows="5" placeholder="Additional Information or Questions"></textarea>
+
+<button type="submit">Submit My DV Lottery Application</button>
+
+</form>
+<div style="background:#eef7ff;
+padding:15px;
+border-left:5px solid #003366;
+border-radius:8px;
+margin-top:20px;">
+
+<h3>🛡️ Privacy Notice</h3>
+
+<p>
+Your information will be used only to provide the application assistance you request. We do not sell or share your personal information with third parties.
+</p>
+
+<p>
+Fofana Data Link is an independent application assistance service and is not affiliated with the U.S. Government.
+</p>
+
+</div>
+<br><br>
+
+<h3>Email</h3>
+
+<p>
+<a href="mailto:fofanam9990@gmail.com">
+fofanam9990@gmail.com
+</a>
+</p>
+
+<h3>Phone</h3>
+
+<p>
+<a href="tel:+224610917082">
++224 610 917 082
+</a>
+</p>
+
+<h3>WhatsApp</h3>
+
+<p>
+<a href="https://wa.me/224625317088" target="_blank">
++224 625 317 088
+</a>
+</p>
+<h3>Follow Us</h3>
+
+<p>Facebook (Coming Soon)</p>
+
+<p>Instagram (Coming Soon)</p>
+
+<p>TikTok (Coming Soon)</p>
+
+<section>
+</section>
+<h2>Business Hours</h2>
+
+<p><strong>Monday - Friday:</strong> 8:00 AM - 6:00 PM</p>
+
+<p><strong>Saturday:</strong> 9:00 AM - 3:00 PM</p>
+
+<p><strong>Sunday:</strong> Closed</p>
+
+</section>
+
+
+<footer>
+
+<h3>Fofana Data Link</h3>
+
+<p>Professional DV Lottery Application Assistance</p>
+
+<p>
+Serving Guinea, Liberia, Côte d'Ivoire (Ivory Coast), Europe, and America
+</p>
+
+<p>Email: fofanam9990@gmail.com</p>
+
+<p>Phone: +224 610 917 082</p>
+
+<p>WhatsApp: +224 625 317 088</p>
+
+<p style="margin-top:20px;">
+This website is operated by Fofana Data Link, an independent application assistance service. We are not affiliated with the U.S. Government. We help prepare and submit applications but cannot guarantee selection in the Diversity Visa Lottery.
+</p>
+<hr style="margin:20px 0;">
+
+<p>
+© 2026 Fofana Data Link. All Rights Reserved.
+</p>
+</footer>
+
+<a class="whatsapp"
+href="https://wa.me/224625317088"
+target="_blank">
+WhatsApp
+</a>
+
+</body>
+</html>
