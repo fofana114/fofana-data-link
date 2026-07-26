@@ -50,27 +50,44 @@ text-decoration:none;
 font-weight:bold;
 }
 
+/* Hero banner styles: responsive image with overlay and content */
 .hero{
-    background:
-    linear-gradient(rgba(0,51,102,.70), rgba(0,51,102,.70)),
-    url("hero.jpg");
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    color:white;
-    padding:90px 20px;
-    text-align:center;
+  position:relative;
+  overflow:hidden;
+  min-height:420px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:#fff;
 }
 
-.hero h1{
-font-size:48px;
-margin-bottom:20px;
+.hero-image{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  z-index:0;
+  pointer-events:none;
 }
 
-.hero p{
-font-size:20px;
-margin-bottom:30px;
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  z-index:1;
+  background: linear-gradient(rgba(0,51,102,0.65), rgba(0,51,102,0.65));
 }
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  padding:60px 20px;
+}
+
+.hero-content h1{ font-size:clamp(28px,5vw,48px); margin-bottom:12px; }
+.hero-content h2{ font-size:clamp(18px,2.2vw,28px); margin-bottom:18px; }
 
 .btn{
 background:#FFD700;
@@ -185,6 +202,9 @@ color:white;
     width:90px;
     height:auto;
 }
+@media (min-width:900px){
+  .logo img{ width:120px; }
+}
 </style>
 
 </head>
@@ -211,18 +231,17 @@ color:white;
 
 </header>
 
-<section class="hero">
-
-<h1>Welcome to Fofana Data Link</h1>
-
-<h2>Your Trusted DV Lottery Application Assistance</h2>
-
-<p>
-Helping eligible applicants in Guinea, Liberia, Côte d'Ivoire (Ivory Coast), Europe, and America prepare and submit their U.S. Diversity Visa Lottery applications.
-</p>
-
-<a class="btn" href="#contact">Start Your Application</a>
-
+<section class="hero" aria-label="Hero banner">
+  <picture>
+    <source srcset="images/hero.webp" type="image/webp">
+    <img src="hero.jpg" alt="Smiling family at an airport" class="hero-image" />
+  </picture>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Welcome to Fofana Data Link</h1>
+    <h2>Your Trusted DV Lottery Application Assistance</h2>
+    <a class="btn" href="#contact">Start Your Application</a>
+  </div>
 </section>
 
 <section id="about">
